@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// function myFunction() {
-//     let element = document.querySelector(".cards");
-//     if (element) {
-//         element.classList.toggle("dark-mode");
-//     }
-// }
+function myFunction() {
+    let element = document.querySelector(".cards");
+    if (element) {
+        element.classList.toggle("dark-mode");
+    }
+}

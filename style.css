@@ -2,17 +2,18 @@
     display: flex !important;
     flex-wrap: wrap !important;
     gap: 20px !important;
+    margin-top: 40px;
 }
 .card{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px;
     color: #1111ff !important;
-    width: 289px;
+    width: 30.74%;
+    /* width: calc(100%/3); */
     background: #60ffac !important;
 }
 button{
     margin-top: 100px !important;
-    /* margin-bottom: 60px !important; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 200px !important;
     height: 50px;
@@ -22,13 +23,21 @@ button{
     border-radius: 3px;
     cursor: pointer;
     border-radius: 10px !important;
-
     &::hover {
         background-color: #ffeffe !important;
         color: #1111ff !important;
     }
 }
-
 .btn{
     display: none;
+}
+.dark-mode{
+    background-color: #111111 !important;
+    color: #ffeffe !important;
+}
+.dark-mode .cards{
+    background-color: #555;
+}
+.dark-mode .card{
+    background-color: #206a38;
 }

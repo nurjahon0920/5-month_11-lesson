@@ -13,12 +13,58 @@
             max-width: 300px;
             border-radius: 5px;
         }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+            background-color: #30dd3f;
+            transition: 0.4s;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            &:hover{
+                background-color: #30ffa3;
+            }
+        }
+        img{
+            cursor: pointer;
+        }
+        .details-top{
+            display: flex;
+            align-items: center;
+            gap: 200px;
+            margin-bottom: 20px;
+        }
+        .dark-mode{
+            background-color: #111111 !important;
+            color: #ffeffe !important;
+        }
+        .dark-mode .cards{
+            background-color: #555;
+        }
+        .dark-mode .card{
+            background-color: #206a38;
+            color: #555;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="details-top">
+            <a href="./index.html">Back</a>
+            <img src="./moon.svg" alt="dark-mode" onclick="myFunction()">
+        </div>
         <div id="details"></div>
     </div>
     <script src="./main.js"></script>
+    <script>function myFunction() {
+        let element = document.querySelector("body");
+        if (element) {
+            element.classList.toggle("dark-mode");
+        }
+    }
+    </script>
 </body>
 </html>
